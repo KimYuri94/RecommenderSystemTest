@@ -1,0 +1,326 @@
+@prefix : <http://example.com/> .
+
+########################
+########1-Level#########
+########################
+
+:Movies
+	:Category :Adventure ;
+	:Category :Children ;
+	:Category :Comedy ;
+	:Category :Romance 
+	:Category :Mystery ;
+	:Category :Action ;
+	:Category :Drama ;
+	:Category :Crime .
+	
+########################
+########2-Level#########
+########################
+
+:Adventure :Related :Jumanji ;
+:Related :Tom_and_Huck ;
+:Related :Balto ;
+:Related :Cutthroat_Island ;
+:Related :City_of_Lost_Children_The ;
+:Related :Wings_of_Courage .
+
+:Children :Related :Toy_Story ;
+:Related :Now_and_Then ;
+:Related :Babe ;
+:Related :It_Takes_Two ;
+:Related :Pocahontas .
+
+:Comedy :Related :Waiting_to_Exhale ;
+:Related :Father_of_the_Bride_Part_II ;
+:Related :Sabrina ;
+:Related :Dracula_Dead_and_Loving_It ;
+:Related :Four_Rooms ;
+:Related :Ace_Ventura_When_Nature_Calls ;
+:Related :Get_Shorty .
+
+:Romance :Related :Grumpier_Old_Men ;
+:Related :American_President_The ;
+:Related :Sense_and_Sensibility ;
+:Related :Leaving_Las_Vegas ;
+:Related :Persuasion ;
+:Related :Carrington ;
+:Related :Clueless ;
+:Related :When_Night_Is_Falling .
+
+:Mystery :Related :Heat ;
+:Related :Copycat ;
+:Related :Twelve_Monkeys ;
+:Related :To_Die_For ;
+:Related :Seven ;
+:Related :Usual_Suspects_The .
+
+
+:Action :Related :Sudden_Death ;
+:Related :GoldenEye ;
+:Related :Money_Train ;
+:Related :Assassins ;
+:Related :Mortal_Kombat .
+
+:Drama :Related :Nixon ;
+:Related :Powder ;
+:Related :Othello ;
+:Related :Dangerous_Minds ;
+:Related :Across_the_Sea_of_Time ;
+:Related :Cry_the_Beloved_Country ;
+:Related :Richard_III ;
+:Related :Restoration ;
+:Related :How_to_Make_an_American_Quilt .
+
+:Crime :Related :Casino ;
+:Related :Shanghai_Triad ;
+:Related :Dead_Man_Walking ;
+:Related :Dead_Presidents .
+
+########################
+########3-Level#########
+########################
+
+:Toy_Story :Recommends :Twelve_Monkeys ;
+ :Recommends :Babe ;
+ :Recommends :Usual_Suspects_The .
+
+:Jumanji :Recommends :Toy_Story ;
+:Recommends :Sense_and_Sensibility ;
+:Recommends :Babe .
+
+:Grumpier_Old_Men :Recommends :Father_of_the_Bride_Part_II ;
+:Recommends :Get_Shorty ;
+:Recommends :GoldenEye .
+
+:Waiting_to_Exhale :Recommends :Sabrina ;
+:Recommends :Get_Shorty ;
+:Recommends :Usual_Suspects_The .
+
+:Father_of_the_Bride_Part_II :Recommends :Babe ;
+:Recommends :Toy_Story ;
+:Recommends :Grumpier_Old_Men .
+
+:Heat :Recommends :Casino ;
+:Recommends :Seven ;
+:Recommends :Usual_Suspects_The .
+
+:Sabrina :Recommends :American_President_The ;
+:Recommends :Clueless ;
+:Recommends :Usual_Suspects_The .
+
+:Tom_and_Huck :Recommends :Sense_and_Sensibility ;
+:Recommends :Leaving_Las_Vegas ;
+:Recommends :Persuasion .
+
+:Sudden_Death :Recommends :Heat ;
+:Recommends :Dead_Man_Walking ;
+:Recommends :Usual_Suspects_The .
+
+:GoldenEye :Recommends :Seven ;
+:Recommends :Usual_Suspects_The ;
+:Recommends :Twelve_Monkeys .
+
+:American_President_The :Recommends :Clueless ;
+:Recommends :Sabrina ;
+:Recommends :Sense_and_Sensibility .
+
+:Dracula_Dead_and_Loving_It :Recommends :Sense_and_Sensibility ;
+:Recommends :Clueless ;
+:Recommends :Usual_Suspects_The .
+
+:Balto :Recommends :Babe ;
+:Recommends :Pocahontas ;
+:Recommends :Toy_Story .
+
+:Nixon :Recommends :Casino ;
+:Recommends :Dead_Man_Walking ;
+:Recommends :Usual_Suspects_The .
+
+:Cutthroat_Island :Recommends :Usual_Suspects_The ;
+:Recommends :Toy_Story ;
+:Recommends :GoldenEye .
+
+:Casino :Recommends :Heat ;
+:Recommends :Get_Shorty ;
+:Recommends :Usual_Suspects_The .
+
+:Sense_and_Sensibility :Recommends :Persuasion ;
+:Recommends :Clueless ;
+:Recommends :Usual_Suspects_The .
+
+:Four_Rooms :Recommends :Leaving_Las_Vegas ;
+:Recommends :When_Night_Is_Falling ;
+:Recommends :Usual_Suspects_The .
+
+:Ace_Ventura_When_Nature_Calls :Recommends :Dangerous_Minds ;
+:Recommends :Clueless ;
+:Recommends :Usual_Suspects_The .
+
+:Money_Train :Recommends :How_to_Make_an_American_Quilt ;
+:Recommends :Usual_Suspects_The ;
+:Recommends :Heat .
+
+:Get_Shorty :Recommends :GoldenEye ;
+:Recommends :Casino ;
+:Recommends :Usual_Suspects_The .
+
+:Copycat :Recommends :Twelve_Monkeys ;
+:Recommends :Seven ;
+:Recommends :Usual_Suspects_The .
+
+:Assassins :Recommends :Usual_Suspects_The ;
+:Recommends :Toy_Story ;
+:Recommends :GoldenEye .
+
+:Powder :Recommends :Heat ;
+:Recommends :Othello ;
+:Recommends :Across_the_Sea_of_Time .
+
+:Leaving_Las_Vegas :Recommends :Twelve_Monkeys ;
+:Recommends :Seven ;
+:Recommends :Heat .
+
+:Othello :Recommends :Toy_Story ;
+:Recommends :Richard_III ;
+:Recommends :Restoration .
+
+:Now_and_Then :Recommends :City_of_Lost_Children_The ;
+:Recommends :How_to_Make_an_American_Quilt ;
+:Recommends :Casino .
+
+:Persuasion :Recommends :Casino ;
+:Recommends :Sense_and_Sensibility ;
+:Recommends :Usual_Suspects_The .
+
+:City_of_Lost_Children_The :Recommends :Twelve_Monkeys ;
+:Recommends :Seven ;
+:Recommends :Heat .
+
+:Shanghai_Triad :Recommends :Casino ;
+:Recommends :Sense_and_Sensibility ;
+:Recommends :Dead_Man_Walking .
+
+:Dangerous_Minds :Recommends :Twelve_Monkeys ;
+:Recommends :Dead_Man_Walking ;
+:Recommends :Usual_Suspects_The .
+
+:Twelve_Monkeys :Recommends :Seven ;
+:Recommends :Casino ;
+:Recommends :Toy_Story .
+
+:Wings_of_Courage :Recommends :Powder ;
+:Recommends :City_of_Lost_Children_The ;
+:Recommends :Across_the_Sea_of_Time .
+
+:Babe :Recommends :Toy_Story ;
+:Recommends :Jumanji ;
+:Recommends :Sense_and_Sensibility .
+
+:Carrington :Recommends :Sense_and_Sensibility ;
+:Recommends :Dead_Man_Walking ;
+:Recommends :Richard_III .
+
+:Dead_Man_Walking :Recommends :Leaving_Las_Vegas ;
+:Recommends :Seven ;
+:Recommends :Casino .
+
+:Across_the_Sea_of_Time :Recommends :Sense_and_Sensibility ;
+:Recommends :Powder ;
+:Recommends :Wings_of_Courage .
+
+:It_Takes_Two :Recommends :Babe ;
+:Recommends :Toy_Story ;
+:Recommends :Sense_and_Sensibility .
+
+:Clueless :Recommends :Sabrina ;
+:Recommends :Sense_and_Sensibility ;
+:Recommends :Usual_Suspects_The .
+
+:Cry_the_Beloved_Country :Recommends :Sense_and_Sensibility ;
+:Recommends :Persuasion ;
+:Recommends :Dangerous_Minds .
+
+:Richard_III :Recommends :Heat ;
+:Recommends :Othello ;
+:Recommends :Usual_Suspects_The .
+
+:Dead_Presidents :Recommends :Dead_Man_Walking ;
+:Recommends :Usual_Suspects_The ;
+:Recommends :Heat .
+
+:Restoration :Recommends :Sense_and_Sensibility ;
+:Recommends :Othello ;
+:Recommends :Persuasion .
+
+:Mortal_Kombat :Recommends :Toy_Story ;
+:Recommends :Seven ;
+:Recommends :Usual_Suspects_The .
+
+:To_Die_For :Recommends :How_to_Make_an_American_Quilt ;
+:Recommends :Usual_Suspects_The ;
+:Recommends :Heat .
+
+:How_to_Make_an_American_Quilt :Recommends :Casino ;
+:Recommends :Sense_and_Sensibility ;
+:Recommends :Leaving_Las_Vegas .
+
+:Seven :Recommends :City_of_Lost_Children_The ;
+:Recommends :Mortal_Kombat ;
+:Recommends :Usual_Suspects_The .
+
+:Pocahontas :Recommends :Toy_Story ;
+:Recommends :Casino ;
+:Recommends :Twelve_Monkeys .
+
+:When_Night_Is_Falling :Recommends :Four_Rooms ;
+:Recommends :Leaving_Las_Vegas ;
+:Recommends :City_of_Lost_Children_The .
+
+:Usual_Suspects_The :Recommends :Toy_Story ;
+:Recommends :Heat ;
+:Recommends :Seven .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
