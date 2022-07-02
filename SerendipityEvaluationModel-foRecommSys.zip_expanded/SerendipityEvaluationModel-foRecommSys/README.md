@@ -1,5 +1,2 @@
-# Evaluation program for measuring 'potential serendipity' of information space - Yuri Kim (2021)
+# Introducing serendipity in RSs using QSEM - Yuri Kim (2022)
 
-This program is extended from 'Changu Kang, Hyeonmin Park, Seongbin Park (2019), Serendipity Evaluation Model _(TBD)'.
-
-The program manual can be found in file "ProgramManual.pdf".
